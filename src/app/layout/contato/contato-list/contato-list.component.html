@@ -1,0 +1,17 @@
+<po-page-list p-title="Contatos"  [p-actions]="actionsPage" >
+  <!--<ul >
+    <li *ngFor="let item of itens | async" >
+        {{item.nome}}
+    </li>
+  </ul> -->
+  <po-table
+    p-container
+    p-sort="true"
+    p-striped="true"
+    [p-columns]="columns"
+    [p-items]="itens"
+    [p-actions]="actions"
+    [p-height]="400">
+  </po-table>
+
+</po-page-list>

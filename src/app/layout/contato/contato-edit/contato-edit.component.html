@@ -1,0 +1,21 @@
+<po-page-edit p-title="Cadastro de Contato" [p-disable-submit]="!formContato.valid">
+  <form id="formContato" #formContato="ngForm">
+    
+    <div class="po-row">
+      <po-input class="po-md-12" [(ngModel)]="contato.nome" p-clean p-icon="po-icon-user" p-label="Nome" name="nome"
+        #name="ngModel" p-required=true>
+      </po-input>
+    </div>
+  
+    <div class="po-row">
+      <po-email class="po-lg-9" [(ngModel)]="contato.email" p-label="Email" p-clean name="email" #email="ngModel"
+        p-required=true>
+      </po-email>
+
+      <po-number class="po-lg-3" [(ngModel)]="contato.telefone" p-label="Telefone" p-clean name="telefone"
+        #telefone="ngModel" p-required=true>
+      </po-number>
+    </div>
+
+  </form>
+</po-page-edit>
